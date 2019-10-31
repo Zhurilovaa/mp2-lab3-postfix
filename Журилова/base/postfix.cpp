@@ -17,10 +17,10 @@ string TPostfix::ToPostfix()
 			if (i != len)
 			{
 				if ((infix[i + 1] < '0') || (infix[i + 1] > '9'))//И i+1 не цифра
-					postfix += '.';
+					postfix += ':';
 			}
 			else
-				postfix += '.';
+				postfix += ':';
 		}
 		if (infix[i] == '(')
 		{
@@ -105,7 +105,7 @@ double TPostfix::Calculate()
 			else//Символ цифра
 			{
 				string number;
-				while (postfix[i] != '.')//Ищем конец числа
+				while (postfix[i] != ':')//Ищем конец числа
 				{
 					number += postfix[i];
 					i++;
