@@ -15,16 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="test_cluster.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="test_main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="test_tpostfix.cpp">
+    <ClCompile Include="test_queue.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="test_tstack.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\base\postfix.cpp">
+    <ClCompile Include="test_task.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

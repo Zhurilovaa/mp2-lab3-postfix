@@ -10,6 +10,12 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="test_cluster.cpp" />
+    <ClCompile Include="test_main.cpp" />
+    <ClCompile Include="test_queue.cpp" />
+    <ClCompile Include="test_task.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F266A6B4-CBC2-41C0-9F55-056959ABA352}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -82,12 +88,6 @@
       <AdditionalDependencies>gtest.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\base\postfix.cpp" />
-    <ClCompile Include="test_main.cpp" />
-    <ClCompile Include="test_tpostfix.cpp" />
-    <ClCompile Include="test_tstack.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
